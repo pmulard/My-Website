@@ -10,21 +10,21 @@ function App() {
 
         </div>
         <div id="content-container">
-          <div id="intro-container">
-            <h3 class="heading">Hi, my name is</h3>
-            <h1>Peter Mulard.</h1>
+          <div id="intro-container" class="row">
+            <h3 id="intro-hello">Hi, my name is</h3>
+            <h1 id="intro-name">Peter Mulard.</h1>
             <p>
               I'm an avid hiker, photographer, campfire story teller and "That pork is so raw, it's still singing Hakuna Matata" cook based in San Francisco. I also work with electro-mechanical systems and software design.
             </p>
-            <div id="photography-button">Photography</div>
+            <div class="photography-button">Photography</div>
           </div>
           <div id="about-container">
             <h3 class="heading">About me</h3>
             <div id="about-paragraph-container">
               <p>Welcome! I'm Peter, an engineer based in San Francisco, CA.</p>
               <p>I enjoy building things that allow for creative expression, whether that be websites/applications, decorative sculptures or a new recipe to try for dinner. My philosophy is to design with a high emphasis on performance, quality, the user experience and aesthetics.</p>
-              <p>Since graduating Gannon University, I have worked in automotive manufacturing and biotech/pharma. In between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
-              <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I have been working with recently:</p>
+              <p>Since graduating Gannon University, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
+              <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
             </div>
             <div id="about-skills-container">
               <li>Javascript (ES6+)</li>
@@ -135,16 +135,14 @@ function App() {
                 </div>
               </div>
               <div id="project-02">
-                <h5 class="project-name">Sorting Algorithm Visualizer</h5>
+                <h5 class="project-name">Moon Phase Calculator</h5>
                 <div class="project-description">
-                  <p>Interactive visualizer animating common sorting algorithms in real time. Hosted on DDNS and personal Apache web server with Linux raspberry pi.</p>
+                  <p>Geolocation-based calculator showing moon properties for any given date and set of coordinates, such as rise/set times, phase and illumination.</p>
                 </div>
                 <ul id="project-technology-container">
                   <li class="project-technology">Javascript</li>
                   <li class="project-technology">React</li>
                   <li class="project-technology">Bootstrap</li>
-                  <li class="project-technology">Apache</li>
-                  <li class="project-technology">Raspberry Pi</li>
                 </ul>
                 <div class="project-link-container">
                   <a href="">
@@ -163,7 +161,7 @@ function App() {
               <p>In 2018, I spent six months backpacking some of the wildest and most remote regions of the United States wilderness. These travels led me to breathtaking nature, unforgettable experiences and amazing people.</p>
               <p>These photos are a collection of those travels and everything since. Enjoy!</p>
             </div>
-            <div id="photography-button-link">Photography</div>
+            <div class="photography-button">Photography</div>
           </div>
           <div id="contact-container">
             <h3 class="heading">Let's Connect</h3>
