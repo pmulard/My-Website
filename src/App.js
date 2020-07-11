@@ -1,5 +1,4 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
@@ -9,19 +8,22 @@ function App() {
         <div id="nav-container">
 
         </div>
-        <div id="content-container">
+        <div id="content-container" class="container">
           <div id="intro-container" class="row">
-            <h3 id="intro-hello">Hi, my name is</h3>
-            <h1 id="intro-name">Peter Mulard.</h1>
-            <p>
-              I'm an avid hiker, photographer, campfire story teller and "That pork is so raw, it's still singing Hakuna Matata" cook based in San Francisco. I also work with electro-mechanical systems and software design.
-            </p>
-            <div class="photography-button">Photography</div>
+            <div id="intro-middle-container" class="col align-self-center">
+              <h1 id="intro-hello">Hi, my name is</h1>
+              <h1 id="intro-name">Peter Mulard.</h1>
+              <h1 id="intro-description">I'm an aspiring full stack software engineer.</h1>
+              <div id="intro-button" class="button">
+                <a href="#about-container">Let's dive in&nbsp;&nbsp;↯</a>
+              </div>
+            </div>
           </div>
           <div id="about-container">
             <h3 class="heading">About me</h3>
             <div id="about-paragraph-container">
               <p>Welcome! I'm Peter, an engineer based in San Francisco, CA.</p>
+              <p>Some would describe me as an avid hiker, photographer, campfire story teller and "That pork is so raw, it's still singing Hakuna Matata" cook based in San Francisco. I also work with electro-mechanical systems and software design.</p>
               <p>I enjoy building things that allow for creative expression, whether that be websites/applications, decorative sculptures or a new recipe to try for dinner. My philosophy is to design with a high emphasis on performance, quality, the user experience and aesthetics.</p>
               <p>Since graduating Gannon University, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
               <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
@@ -33,6 +35,8 @@ function App() {
               <li>Spring Boot</li>
               <li>Python</li>
               <li>Linux & Apache</li>
+              <li>Illustrator</li>
+              <li>After Effects</li>
             </div>
             <div id="about-photo-container">
               <a href="" id="about-photo-element"></a>
@@ -110,7 +114,7 @@ function App() {
               </div>
             </div>
           </div>
-          <div id="projects=container">
+          <div id="projects-container">
             <h3 class="heading">Software I've built</h3>
             <div>
               <div id="project-01">

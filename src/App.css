@@ -49,26 +49,50 @@
 }
 
 #intro-container {
-  
+  height: 100vh;
 }
 
-  #intro-hello {
-    color: #39d486;
-    text-align: left;
-    font-size: 14px;
-    letter-spacing: 2px;
-    margin: 0;
-    padding-top: 100px;
+  #intro-middle-container {
+   padding-top: 280px;
   }
 
-  #intro-name {
-    color: #dfe7ed;
-    text-align: left;
-    margin-top: 10px;
+    #intro-hello {
+      color: #39d486;
+      font-size: 30px;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+
+    #intro-name {
+      color: #dfe7ed;
+      margin: 10px 20px;
+      letter-spacing: 3px;
+      font-size: 60px;
+    }
+
+    #intro-description {
+      color: #99b5c7;
+      margin: 0 50px;
+      margin-top: 18px;
+      font-size: 30px;
+
+    }
+
+  #intro-button {
+    margin-top: 55px;
+  }
   
-    font-size: 60px;
-  }
+    #intro-button a {
+      font-size: 20px;
+      border: 2px solid #39d486;
+      padding: 10px 20px;
+    }
 
+
+
+html {
+  scroll-behavior: smooth;
+  }
 
 .heading {
   color: #dfe7ed;
@@ -86,17 +110,7 @@ li::before {
   font-size: 1em;
 }
 
-button {
-  color: #39d486;
-}
-
 a {
   color: #39d486;
   text-decoration: none;
-}
-
-.photography-button, #contact-button {
-  color: #39d486;
-  margin-top: 80px;
-  margin-bottom: 200px;
 }
