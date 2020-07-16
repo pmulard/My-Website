@@ -15,7 +15,7 @@ function App() {
               <h1 id="intro-name">Peter Mulard.</h1>
               <h1 id="intro-description">I'm an aspiring full stack software engineer.</h1>
               <div id="intro-button" class="button">
-                <a href="#about-container">Let's dive in&nbsp;&nbsp;↯</a>
+                <a href="#about-container">Let's dive in</a>
               </div>
             </div>
           </div>
