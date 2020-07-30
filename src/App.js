@@ -11,11 +11,6 @@ function App() {
         </div>
         <div id="content-container" class="container">
           <div id="intro-container" class="row">
-            <div id="intro-middle-container" class="col align-self-center">
-              <h1 id="intro-hello">Hi, my name is</h1>
-              <h1 id="intro-name">Peter Mulard.</h1>
-              <h1 id="intro-description">I'm an aspiring full stack software engineer.</h1>
-            </div>
             {/* <div id="fireflies-container">
               {fireflies()}
             </div> */}
