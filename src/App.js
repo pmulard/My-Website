@@ -11,9 +11,6 @@ function App() {
         </div>
         <div id="content-container" class="container">
           <div id="intro-container" class="row">
-            {/* <div id="fireflies-container">
-              {fireflies()}
-            </div> */}
             <div id="intro-button" class="button">
                 <a href="#about-container">Let's dive in</a>
             </div>
