@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import gsap from 'gsap';
 
 function App() {
   return (
@@ -14,9 +15,12 @@ function App() {
               <h1 id="intro-hello">Hi, my name is</h1>
               <h1 id="intro-name">Peter Mulard.</h1>
               <h1 id="intro-description">I'm an aspiring full stack software engineer.</h1>
-              <div id="intro-button" class="button">
+            </div>
+            {/* <div id="fireflies-container">
+              {fireflies()}
+            </div> */}
+            <div id="intro-button" class="button">
                 <a href="#about-container">Let's dive in</a>
-              </div>
             </div>
           </div>
           <div id="about-container">
@@ -176,6 +180,53 @@ function App() {
       </div>
     </div>
   );
+}
+
+
+/*
+a Pen by DIACO : twitter.com/Diaco_ml || codepen.io/MAW
+powered by GSAP : https://www.greensock.com/
+*/
+const fireflies = () => {
+
+  var total=40,
+    container=document.getElementById('fireflies-container'),
+    w=window.innerWidth,
+    h=window.innerHeight,
+    Tweens=[],
+    SPs=1;
+
+  for (var i=total;i--;){ 
+    var Div=document.createElement('div');
+    gsap.set(Div,{attr:{class:'dot'},x:R(w),y:R(h),opacity:0});
+    container.appendChild(Div);	Anim(Div);	Tweens.push(Div);
+  };
+
+  function Anim(elm){ 
+    elm.Tween=gsap.to(elm,R(20)+10,{bezier:{values:[{x:R(w),y:R(h)},{x:R(w),y:R(h)}]},opacity:R(1),scale:R(1)+0.5,delay:R(2),onComplete:Anim,onCompleteParams:[elm]})
+  };
+
+  for(var i=total;i--;){
+    Tweens[i].Tween.play()};
+
+  window.addEventListener("resize", resize);
+
+  function R(max){return Math.random()*max};
+
+  function resize() {
+    
+    w = window.innerWidth;
+    h = window.innerHeight;
+    
+    for (var i = 0; i < total; i++) {
+      
+      var fireFly = Tweens[i];
+
+      gsap.killTweensOf(fireFly);
+      
+      Anim(fireFly);
+    }
+  }
 }
 
 export default App;
