@@ -15,7 +15,7 @@
 
 /* App contents */
 #main-container {
-  background-color: #002038;
+  background-color: #06183d;
 }
 
 #content-container {
@@ -52,14 +52,12 @@
 
 
 #profile-picture {
-  float: right;
   height: 300px;
   width: auto;
   border: 2px solid #39d486;
 }
 
 #about-paragraph-container {
-  margin-right: 50px;
 }
 
 /* #fireflies-container {

@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-import gsap from 'gsap';
 
 function App() {
   return (
@@ -15,13 +14,15 @@ function App() {
                 <a href="#about-container">Learn more</a>
             </div>
           </div>
-          <div id="about-container">
+          <div id="about-container" class="container">
             <h3 class="heading">About Me</h3>
-            <img src="profilePicture.jpg" id="profile-picture"></img>
-            <div id="about-paragraph-container">
-              <p>Hi! I'm Peter, an engineer based in San Francisco, CA.</p>
-              <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
-              <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
+            <div class="row">
+              <img src="profilePicture.jpg" id="profile-picture" class="col-5"></img>
+              <div id="about-paragraph-container" class="col-7">
+                <p>Hi! I'm Peter, an engineer based in San Francisco, CA.</p>
+                <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
+                <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
+              </div>
             </div>
             <div id="about-skills-container">
               <li>Javascript (ES6+)</li>
