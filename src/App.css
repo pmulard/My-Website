@@ -52,13 +52,28 @@
 }
 
   #profile-picture {
-    height: 280px;
+    max-height: 250px;
     width: auto;
     border: 2px solid #39d486;
   }
 
-#about-paragraph-container {
+.alt-text-color {
+  color: #39d486;
 }
+
+#about-skills-container {
+  justify-content: start;
+  margin-bottom: 200px;
+}
+
+#skills-left {
+  margin-left: 7.5vw;
+}
+
+    #skills-left li, #skills-right li {
+      font-size: 16px;
+      list-style-type: none;
+    }
 
 /* #fireflies-container {
   height: 20vh;
@@ -92,9 +107,10 @@ p, li {
 
 li::before {
   color: #39d486;
-  content: "\f066";
+  content: "\1809";
   display: inline-block;
   font-size: 1em;
+  padding-right: 12px;
 }
 
 a {

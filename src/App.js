@@ -20,22 +20,26 @@ function App() {
             <div class="row d-flex justify-content-center">
               <div id="about-paragraph-container" class="col-7 col-lg-5">
                 <p>Hi! I'm Peter, an engineer based in San Francisco, CA.</p>
-                <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
+                <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in <span class="alt-text-color">automotive manufacturing</span> and <span class="alt-text-color">biotech/pharma</span>. Somewhere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
                 <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
               </div>
               <div class="col-5" id="profile-picture-box">
                 <img src="profilePicture.jpg" id="profile-picture"></img>
               </div>
             </div>
-            <div id="about-skills-container">
-              <li>Javascript (ES6+)</li>
-              <li>React & Redux</li>
-              <li>Java (8+)</li>
-              <li>Python</li>
-              <li>Node.js & Express</li>
-              <li>MongoDB</li>
-              <li>Adobe Illustrator</li>
-              <li>Adobe After Effects</li>
+            <div id="about-skills-container" class="row">
+              <div id="skills-left" class="col-5 col-md-4 col-lg-3">
+                <li>Javascript (ES6+)</li>
+                <li>React & Redux</li>
+                <li>Java (8+)</li>
+                <li>Python</li>
+              </div>
+              <div id="skills-right" class="col-5 col-md-4 col-lg-3">
+                <li>Node.js & Express</li>
+                <li>MongoDB</li>
+                <li>Adobe Illustrator</li>
+                <li>Adobe After Effects</li>
+              </div>
             </div>
             <div id="about-photo-container">
               <a href="" id="about-photo-element"></a>
