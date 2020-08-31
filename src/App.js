@@ -12,27 +12,26 @@ function App() {
         <div id="content-container" class="container">
           <div id="intro-container" class="row">
             <div id="intro-button" class="button">
-                <a href="#about-container">Let's dive in</a>
+                <a href="#about-container">Learn more</a>
             </div>
           </div>
           <div id="about-container">
-            <h3 class="heading">About me</h3>
+            <h3 class="heading">About Me</h3>
+            <img src="profilePicture.jpg" id="profile-picture"></img>
             <div id="about-paragraph-container">
-              <p>Welcome! I'm Peter, an engineer based in San Francisco, CA.</p>
-              <p>Some would describe me as an avid hiker, photographer, campfire story teller and "That pork is so raw, it's still singing Hakuna Matata" cook based in San Francisco. I also work with electro-mechanical systems and software design.</p>
-              <p>I enjoy building things that allow for creative expression, whether that be websites/applications, decorative sculptures or a new recipe to try for dinner. My philosophy is to design with a high emphasis on performance, quality, the user experience and aesthetics.</p>
-              <p>Since graduating Gannon University, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
+              <p>Hi! I'm Peter, an engineer based in San Francisco, CA.</p>
+              <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
               <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
             </div>
             <div id="about-skills-container">
               <li>Javascript (ES6+)</li>
-              <li>React</li>
+              <li>React & Redux</li>
               <li>Java (8+)</li>
-              <li>Spring Boot</li>
               <li>Python</li>
-              <li>Linux & Apache</li>
-              <li>Illustrator</li>
-              <li>After Effects</li>
+              <li>Node.js & Express</li>
+              <li>MongoDB</li>
+              <li>Adobe Illustrator</li>
+              <li>Adobe After Effects</li>
             </div>
             <div id="about-photo-container">
               <a href="" id="about-photo-element"></a>
@@ -93,7 +92,7 @@ function App() {
               </div>
               <div id="career-panel-02">
                 <h3 class="career-panel-titleCompany">
-                  <span>Engineering Technician</span>
+                  <span>Mechanical Engineer</span>
                   <span>
                     <span>&nbsp;@&nbsp;</span>
                     <a href="" class="career-panel-companyLink">ISM Erie</a>
@@ -111,7 +110,7 @@ function App() {
             </div>
           </div>
           <div id="projects-container">
-            <h3 class="heading">Software I've built</h3>
+            <h3 class="heading">Software I've Built</h3>
             <div>
               <div id="project-01">
                 <h5 class="project-name">Sorting Algorithm Visualizer</h5>
@@ -165,60 +164,13 @@ function App() {
           </div>
           <div id="contact-container">
             <h3 class="heading">Let's Connect</h3>
-            <p>I am currently looking for new opportunities in software development and would be happy to chat about a potential fit. Whether you would like to discuess business, have some question or just want to say hi, feel free to reach out!</p>
+            <p>I am currently looking for new opportunities in software development and would be happy to chat about a potential fit. Whether you would like to discuess business, have some questions or just want to say hi, feel free to reach out!</p>
             <div id="contact-button">Say Hello</div>
           </div>
         </div> 
       </div>
     </div>
   );
-}
-
-
-/*
-a Pen by DIACO : twitter.com/Diaco_ml || codepen.io/MAW
-powered by GSAP : https://www.greensock.com/
-*/
-const fireflies = () => {
-
-  var total=40,
-    container=document.getElementById('fireflies-container'),
-    w=window.innerWidth,
-    h=window.innerHeight,
-    Tweens=[],
-    SPs=1;
-
-  for (var i=total;i--;){ 
-    var Div=document.createElement('div');
-    gsap.set(Div,{attr:{class:'dot'},x:R(w),y:R(h),opacity:0});
-    container.appendChild(Div);	Anim(Div);	Tweens.push(Div);
-  };
-
-  function Anim(elm){ 
-    elm.Tween=gsap.to(elm,R(20)+10,{bezier:{values:[{x:R(w),y:R(h)},{x:R(w),y:R(h)}]},opacity:R(1),scale:R(1)+0.5,delay:R(2),onComplete:Anim,onCompleteParams:[elm]})
-  };
-
-  for(var i=total;i--;){
-    Tweens[i].Tween.play()};
-
-  window.addEventListener("resize", resize);
-
-  function R(max){return Math.random()*max};
-
-  function resize() {
-    
-    w = window.innerWidth;
-    h = window.innerHeight;
-    
-    for (var i = 0; i < total; i++) {
-      
-      var fireFly = Tweens[i];
-
-      gsap.killTweensOf(fireFly);
-      
-      Anim(fireFly);
-    }
-  }
 }
 
 export default App;

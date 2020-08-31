@@ -22,6 +22,10 @@
   justify-content: center;
 }
 
+#about-container, #career-container, #projects-container, #photography-container, #contact-container {
+  margin: 10vw;
+}
+
 #intro-container {
   height: 100vh;
   background: url(home-page-background.png);
@@ -45,6 +49,18 @@
       #intro-button:hover {
 
       }
+
+
+#profile-picture {
+  float: right;
+  height: 300px;
+  width: auto;
+  border: 2px solid #39d486;
+}
+
+#about-paragraph-container {
+  margin-right: 50px;
+}
 
 /* #fireflies-container {
   height: 20vh;
@@ -72,6 +88,7 @@ html {
 p, li {
   color: #99b5c7;
   text-align: left;
+  font-size: 18px;
 }
 
 li::before {
