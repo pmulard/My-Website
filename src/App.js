@@ -1,4 +1,5 @@
 import React from 'react';
+import "bootstrap/dist/css/bootstrap.css";
 import './App.css';
 
 function App() {
@@ -8,20 +9,22 @@ function App() {
         <div id="nav-container">
 
         </div>
-        <div id="content-container" class="container">
-          <div id="intro-container" class="row">
+        <div id="content-container">
+          <div id="intro-container">
             <div id="intro-button" class="button">
                 <a href="#about-container">Learn more</a>
             </div>
           </div>
           <div id="about-container" class="container">
             <h3 class="heading">About Me</h3>
-            <div class="row">
-              <img src="profilePicture.jpg" id="profile-picture" class="col-5"></img>
-              <div id="about-paragraph-container" class="col-7">
+            <div class="row d-flex justify-content-center">
+              <div id="about-paragraph-container" class="col-7 col-lg-5">
                 <p>Hi! I'm Peter, an engineer based in San Francisco, CA.</p>
                 <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in automotive manufacturing and biotech/pharma. Somwehere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
                 <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
+              </div>
+              <div class="col-5" id="profile-picture-box">
+                <img src="profilePicture.jpg" id="profile-picture"></img>
               </div>
             </div>
             <div id="about-skills-container">

@@ -22,15 +22,12 @@
   justify-content: center;
 }
 
-#about-container, #career-container, #projects-container, #photography-container, #contact-container {
-  margin: 10vw;
-}
-
 #intro-container {
   height: 100vh;
   background: url(home-page-background.png);
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
 }
 
   #intro-button {
@@ -50,12 +47,15 @@
 
       }
 
-
-#profile-picture {
-  height: 300px;
-  width: auto;
-  border: 2px solid #39d486;
+#profile-picture-box {
+  padding-top: 10px;
 }
+
+  #profile-picture {
+    height: 280px;
+    width: auto;
+    border: 2px solid #39d486;
+  }
 
 #about-paragraph-container {
 }
@@ -81,6 +81,7 @@ html {
 
 .heading {
   color: #dfe7ed;
+  margin: 50px 0;
 }
 
 p, li {
