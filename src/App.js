@@ -122,10 +122,10 @@ function App() {
             <div>
               <div id="project-01" class="container">
                 <div class="row justify-content-center">
-                  <div class="project-image-box col-5 col-md-5">
-                    <img src="sortingAlgorithmVisualizer.jpg"></img>
+                  <div class="project-image-box col-6">
+                    <a href="https://www.petermulard.me"><img src="sortingAlgorithmVisualizer.jpg"></img></a>
                   </div>
-                  <div class="col-7 col-md-5">
+                  <div class="col-6">
                     <h5 class="project-name">Sorting Algorithm Visualizer</h5>
                     <div class="project-description">
                       <p>Interactive visualizer animating common sorting algorithms in real time. Hosted on DDNS and personal Apache web server with Linux raspberry pi.</p>
@@ -136,11 +136,11 @@ function App() {
                       <li class="project-technology">Bootstrap</li>
                     </ul>
                     <div class="project-link-container col-12">
-                      <a href="">
-                        <svg></svg>
+                      <a href="https://github.com/pmulard/Sorting-Visualizer">
+                        <img src="github-grey.svg" class="github-icon-link"></img>
                       </a>
-                      <a href="">
-                        <svg></svg>
+                      <a href="https://www.petermulard.me">
+                        <img src="external-grey.svg" class="external-icon-link"></img>
                       </a>
                     </div>
                   </div>
