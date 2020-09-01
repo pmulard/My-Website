@@ -119,14 +119,14 @@ a {
     }
 
 .project-image-box img {
-  width: 100%;
   height: 100%;
+  width: 100%;
   border-radius: 5px;
 }
 
 
 
-#project-01 {
+#project-01, #project-02 {
   margin-bottom: 70px;
 }
 
@@ -150,6 +150,7 @@ a {
 
 .project-technology-container {
   padding: 20px 0;
+  padding-bottom: 14px;
   margin-bottom: 0;
   text-align: end;
 }
@@ -167,7 +168,8 @@ a {
 
 
 .project-link-container {
-
+  text-align: end;
+  padding: 0;
 }
 
   .github-icon-link, .external-icon-link {
