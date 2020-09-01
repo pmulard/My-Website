@@ -146,23 +146,30 @@ function App() {
                   </div>
                 </div>
               </div>
-              <div id="project-02">
-                <h5 class="project-name">Moon Phase Calculator</h5>
-                <div class="project-description">
-                  <p>Geolocation-based calculator showing moon properties for any given date and set of coordinates, such as rise/set times, phase and illumination.</p>
-                </div>
-                <ul class="project-technology-container">
-                  <li class="project-technology">Javascript</li>
-                  <li class="project-technology">React</li>
-                  <li class="project-technology">Bootstrap</li>
-                </ul>
-                <div class="project-link-container">
-                  <a href="">
-                    <svg></svg>
-                  </a>
-                  <a href="">
-                    <svg></svg>
-                  </a>
+              <div id="project-02" class="container">
+                <div class="row justify-content-center">
+                  <div class="project-image-box col-6">
+                    <a href="https://www.petermulard.me"><img src="moonPhaseCalculator.jpg"></img></a>
+                  </div>
+                  <div class="col-6">
+                    <h5 class="project-name">Moon Phase Calculator</h5>
+                    <div class="project-description">
+                      <p>Geolocation-based calculator showing moon properties for any given date and set of coordinates, such as rise/set times, phase and illumination.</p>
+                    </div>
+                    <ul class="project-technology-container">
+                      <li class="project-technology">Javascript</li>
+                      <li class="project-technology">React</li>
+                      <li class="project-technology">Bootstrap</li>
+                    </ul>
+                    <div class="project-link-container col-12">
+                      <a href="https://github.com/pmulard/Moon-Phase-Calculator">
+                        <img src="github-grey.svg" class="github-icon-link"></img>
+                      </a>
+                      <a href="https://www.petermulard.me">
+                        <img src="external-grey.svg" class="external-icon-link"></img>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
