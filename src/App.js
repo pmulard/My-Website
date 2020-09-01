@@ -120,25 +120,30 @@ function App() {
           <div id="projects-container">
             <h3 class="heading">Software I've Built</h3>
             <div>
-              <div id="project-01">
-                <h5 class="project-name">Sorting Algorithm Visualizer</h5>
-                <div class="project-description">
-                  <p>Interactive visualizer animating common sorting algorithms in real time. Hosted on DDNS and personal Apache web server with Linux raspberry pi.</p>
-                </div>
-                <ul id="project-technology-container">
-                  <li class="project-technology">Javascript</li>
-                  <li class="project-technology">React</li>
-                  <li class="project-technology">Bootstrap</li>
-                  <li class="project-technology">Apache</li>
-                  <li class="project-technology">Raspberry Pi</li>
-                </ul>
-                <div class="project-link-container">
-                  <a href="">
-                    <svg></svg>
-                  </a>
-                  <a href="">
-                    <svg></svg>
-                  </a>
+              <div id="project-01" class="container">
+                <div class="row justify-content-center">
+                  <div class="project-image-box col-5 col-md-5">
+                    <img src="sortingAlgorithmVisualizer.jpg"></img>
+                  </div>
+                  <div class="col-7 col-md-5">
+                    <h5 class="project-name">Sorting Algorithm Visualizer</h5>
+                    <div class="project-description">
+                      <p>Interactive visualizer animating common sorting algorithms in real time. Hosted on DDNS and personal Apache web server with Linux raspberry pi.</p>
+                    </div>
+                    <ul class="project-technology-container">
+                      <li class="project-technology">Javascript</li>
+                      <li class="project-technology">React</li>
+                      <li class="project-technology">Bootstrap</li>
+                    </ul>
+                    <div class="project-link-container col-12">
+                      <a href="">
+                        <svg></svg>
+                      </a>
+                      <a href="">
+                        <svg></svg>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
               <div id="project-02">
@@ -146,7 +151,7 @@ function App() {
                 <div class="project-description">
                   <p>Geolocation-based calculator showing moon properties for any given date and set of coordinates, such as rise/set times, phase and illumination.</p>
                 </div>
-                <ul id="project-technology-container">
+                <ul class="project-technology-container">
                   <li class="project-technology">Javascript</li>
                   <li class="project-technology">React</li>
                   <li class="project-technology">Bootstrap</li>
