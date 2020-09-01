@@ -20,7 +20,7 @@ function App() {
             <div class="row d-flex justify-content-center">
               <div id="about-paragraph-container" class="col-7 col-lg-5">
                 <p>Hi! I'm Peter, an engineer based in San Francisco, CA.</p>
-                <p>Since graduating Gannon University with a B.S. in Mechanical Engineering, I have worked in <span class="alt-text-color">automotive manufacturing</span> and <span class="alt-text-color">biotech/pharma</span>. Somewhere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
+                <p>Since graduating <span class="alt-text-color">Gannon University</span> with a B.S. in <span class="alt-text-color">Mechanical Engineering</span>, I have worked in automotive manufacturing and biotech/pharma. Somewhere in between, I spent six months backpacking wild and remote wilderness in the U.S., but those stories will have to wait until we're around a campfire.</p>
                 <p>Outside of the outdoors and art, my passion lies in building software. Here are a few of the technologies I like to use:</p>
               </div>
               <div class="col-5" id="profile-picture-box">
@@ -125,7 +125,7 @@ function App() {
                   <div class="project-image-box col-6">
                     <a href="https://www.petermulard.me"><img src="sortingAlgorithmVisualizer.jpg"></img></a>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 project-info-box">
                     <h5 class="project-name">Sorting Algorithm Visualizer</h5>
                     <div class="project-description">
                       <p>Interactive visualizer animating common sorting algorithms in real time. Hosted on DDNS and personal Apache web server with Linux raspberry pi.</p>
@@ -151,7 +151,7 @@ function App() {
                   <div class="project-image-box col-6">
                     <a href="https://www.petermulard.me"><img src="moonPhaseCalculator.jpg"></img></a>
                   </div>
-                  <div class="col-6">
+                  <div class="col-6 project-info-box">
                     <h5 class="project-name">Moon Phase Calculator</h5>
                     <div class="project-description">
                       <p>Geolocation-based calculator showing moon properties for any given date and set of coordinates, such as rise/set times, phase and illumination.</p>

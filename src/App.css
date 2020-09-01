@@ -118,26 +118,41 @@ a {
       font-size: 16px;
     }
 
+
+
+
+#career-container, #projects-container, #photography-container {
+  margin: 200px 0;
+}
+
+
+
+
+#project-01, #project-02 {
+  margin-bottom: 85px;
+  padding: 0 8vw;
+}
+
 .project-image-box img {
   height: 100%;
   width: 100%;
   border-radius: 5px;
 }
 
-
-
-#project-01, #project-02 {
-  margin-bottom: 70px;
+.project-info-box {
+  text-align: end;
 }
 
 .project-name {
   color: #39d486;
   text-align: right;
-  padding-bottom: 30px;
+  padding-bottom: 15px;
+  width: 80%;
+  margin-left: auto;
 }
 
 .project-description {
-  background-color: #102a6185;
+  background-color: #142549;
   padding: 30px;
   border-radius: 5px;
 }
@@ -181,4 +196,20 @@ a {
 
 
 
+@media screen and (max-width: 990px) {
+  .project-image-box img {
+    height: 60%;
+    width: 100%;
+  }
 
+  #project-01, #project-02 {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .project-image-box img {
+    height: 60%;
+    width: 118%;
+  }
+}
